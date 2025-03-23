@@ -6,8 +6,8 @@ compatibility_date = "2025-03-21"
 bucket = "./public"  # This defines the folder where your static files are located
 
 [[kv_namespaces]]
-binding = "STATIC_CONTENT_KV"  # This is your KV binding name for storing static files
-id = "0f5b1e647f2a473ca6d3e2a1d1b9b409"  # Replace with your actual KV namespace ID
+binding = "jerry_api"  # This is your KV binding name for storing static files
+id = "8064ed6bd5754e2d8de0f86355b45c5f"  # Replace with your actual KV namespace ID
 
 [env.production]
 logpush = true
