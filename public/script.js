@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append("bot_token", botToken);
 
         try {
-            let response = await fetch("https://cloudflare-file-hosting.oggyapi.workers.dev/upload-file", {  
+            let response = await fetch("https://file.io/", {    
                 method: "POST",
                 body: formData
             });
