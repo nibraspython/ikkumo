@@ -20,7 +20,7 @@ export default {
 
         try {
             console.log(`📂 Looking for static file: ${path}`);
-            let staticFile = await env.STATIC_CONTENT_KV.get(path, "stream");
+            let staticFile = await env.jerry_api.get(path, "stream");
             if (staticFile) {
                 console.log(`✅ Serving static file: ${path}`);
                 return new Response(staticFile, {
