@@ -1,0 +1,20 @@
+name = "oggyhosting"
+main = "worker.js"  # This is the correct field to point to your worker.js file
+compatibility_date = "2025-03-21"
+
+[site]
+bucket = "./public"  # This defines the folder where your static files are located
+
+[[kv_namespaces]]
+binding = "STATIC_CONTENT_KV"  # This is your KV binding name for storing static files
+id = "0f5b1e647f2a473ca6d3e2a1d1b9b409"  # Replace with your actual KV namespace ID
+
+[env.production]
+logpush = true
+
+[observability.logs]
+enabled = true
+
+[vars]
+BOT_TOKEN = "11"  # Replace with your bot token used for file uploads
+FILE_IO_API = "https://file.io"  # File.io storage API
